@@ -38,52 +38,78 @@
 }
 */
 
-
 /* =========================
-   DETALLE (plantilla para futura página de detalle)
-   - Descomenta y adapta cuando tengas detalle.html
+   LOGIN
+   Estilos específicos para la página de login
    ========================= */
 
-/*
-.detalle-cabecera {
-  Espaciado extra para el encabezado del detalle (si lo necesitas)
-  margin-top: 16px;
+.login {
+    /* un poco más de aire vertical que una sección normal */
+    padding: 40px 0;
 }
 
-.detalle-titulo {
-  Un tamaño o espaciado particular solo del detalle
-  margin-bottom: 12px;
+.login__titulo {
+    text-align: center;
+    margin-bottom: 16px;
 }
 
-.detalle-contenido {
-  Limitar ancho del texto largo del artículo, por ejemplo
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-*/
-
-
-/* =========================
-   CONTACTO (plantilla para futura página de contacto)
-   - Descomenta y adapta cuando tengas contacto.html
-   ========================= */
-
-/*
-.contacto-formulario {
-  Ajustes del formulario solo en esta página (separaciones, ancho)
-  width: 90%;
-  max-width: 720px;
-  margin: 0 auto;
+.login__card {
+    /* caja centrada tipo tarjeta */
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--color-linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 20px;
 }
 
-.contacto-mapa {
-  Si embebes un mapa solo aquí, dale altura fija
-  height: 280px;
-  border-radius: var(--radio);
-  overflow: hidden;
+.login__form {
+    display: grid;
+    gap: 16px;
 }
-*/
+
+.login__grupo {
+    display: grid;
+    gap: 6px;
+}
+
+.login__label {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+}
+
+.login__input {
+    padding: 10px 12px;
+    border: 1.5px solid var(--color-linea);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--color-texto);
+    outline: none;
+}
+
+.login__input:focus {
+    border-color: var(--color-marca);
+    box-shadow: 0 0 0 3px rgba(110, 75, 58, .15);
+    /* halo con color de marca */
+}
+
+.login__acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* En pantallas pequeñas, apilar botones */
+@media (max-width: 480px) {
+    .login__acciones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
 
 
 /* =========================

@@ -151,6 +151,12 @@
     border-color: var(--color-marca);
 }
 
+.boton--contraste {
+    background: var(--color-marca-tinta);
+    color: var(--color-marca);
+    border-color: var(--color-marca);
+}
+
 
 /* ======================================
    TARJETA (PUBLICACIÓN)
