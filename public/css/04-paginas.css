@@ -1,0 +1,94 @@
+/* =========================
+   04-PÁGINAS
+   Qué va aquí:
+   - Estilos ESPECÍFICOS de cada página.
+   - No pongas componentes reutilizables (van en 03-componentes.css).
+   - No pongas rejillas genéricas (van en 02-layout.css).
+
+   Sugerencia de uso:
+   - Prefijo por página: .inicio-*, .detalle-*, .contacto-*
+   - Mantén estos estilos al mínimo: solo lo que esa página necesita.
+   ========================= */
+
+
+/* =========================
+   HOME / INICIO
+   - Ajustes propios de la portada (index.html)
+   ========================= */
+
+/* Título de “Publicacions destacades” en Home */
+.inicio-destacados__titulo {
+    /* Color de título coherente con el diseño del sitio */
+    color: var(--color-titulo);
+}
+
+/* Contenedor de las cards en Home */
+.inicio-destacados__rejilla {
+    /* Ancho visual alineado con el resto (95% hasta 1400px) */
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* centrado */
+}
+
+/* (Ejemplo opcional)
+.inicio-banner--alto {
+  Ajuste puntual si en la home quisieras un banner más alto:
+  height: 380px;
+}
+*/
+
+
+/* =========================
+   DETALLE (plantilla para futura página de detalle)
+   - Descomenta y adapta cuando tengas detalle.html
+   ========================= */
+
+/*
+.detalle-cabecera {
+  Espaciado extra para el encabezado del detalle (si lo necesitas)
+  margin-top: 16px;
+}
+
+.detalle-titulo {
+  Un tamaño o espaciado particular solo del detalle
+  margin-bottom: 12px;
+}
+
+.detalle-contenido {
+  Limitar ancho del texto largo del artículo, por ejemplo
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+*/
+
+
+/* =========================
+   CONTACTO (plantilla para futura página de contacto)
+   - Descomenta y adapta cuando tengas contacto.html
+   ========================= */
+
+/*
+.contacto-formulario {
+  Ajustes del formulario solo en esta página (separaciones, ancho)
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contacto-mapa {
+  Si embebes un mapa solo aquí, dale altura fija
+  height: 280px;
+  border-radius: var(--radio);
+  overflow: hidden;
+}
+*/
+
+
+/* =========================
+   RECORDATORIO
+   - Si ves que algo de aquí podría servir en más páginas,
+     muévelo a 03-componentes.css (como componente, botón, tarjeta…)
+   - Si es layout/rejilla genérica, muévelo a 02-layout.css
+   ========================= */
