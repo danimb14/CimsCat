@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pàgina d'Inici</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/components.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inici</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header_banner">
+            <img src="./img/banner.jpg" alt="imatge de banner" class="header_image" />
+        </div>
+        <div>
+            <h1 class="header_title">CIMSCAT</h1>
+        </div>
+    </header>
+    <div class="searchbar">
+        <div class="searchbar__inner">
+            <div>
+                <input type="text" class="searchbar_input" placeholder="Cerca..." />
+                <button class="searchbar_button">Cerca</button>
+            </div>
+            <a class="searchbar_login" href="login.html">Inicia sessió</a>
+        </div>
+    </div>
+
+    <div class="featuredposts">
+        <h2 class="featuredposts_title">Publicacions destacades</h2>
+        <div class="featuredposts_container">
+            <div class="post_card">
+                <img src="./img/montserrat.jpg" alt="Imatge de Montserrat" class="post_card_image" />
+                <h3 class="post_card_title">Excursió a Montserrat</h3>
+                <p class="post_card_description">
+                    Descobreix els millors camins per gaudir de la muntanya de
+                    Montserrat.
+                </p>
+                <a href="publicacio.html" class="post_card_button">Llegir més</a>
+            </div>
+            <div class="post_card">
+                <img src="./img/cadiretes.jpg" alt="Imatge de Les Cadiretes" class="post_card_image" />
+                <h3 class="post_card_title">Ruta per Les Cadiretes</h3>
+                <p class="post_card_description">
+                    Explora els paisatges espectaculars de Les Cadiretes amb aquesta
+                    ruta guiada.
+                </p>
+                <a href="publicacio.html" class="post_card_button">Llegir més</a>
+            </div>
+            <div class="post_card">
+                <img src="./img/puigmal.jpg" alt="Imatge del Puigmal" class="post_card_image" />
+                <h3 class="post_card_title">Ascensió al Puigmal</h3>
+                <p class="post_card_description">
+                    Viu l'aventura d'ascendir al cim del Puigmal i gaudeix de vistes
+                    inoblidables.
+                </p>
+                <a href="publicacio.html" class="post_card_button">Llegir més</a>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <small class="site-footer__copy">© 2025 CIMSCAT</small>
+            <nav class="site-footer__links" aria-label="Enlaces legales">
+                <a href="/privacidad.html">Política de privacidad</a>
+                <a href="/contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
 </body>
+
 </html>
