@@ -21,17 +21,16 @@
 .portada {
     /* Fondo suave y texto centrado para el bloque completo */
     background: var(--color-fondo);
-    padding: 20px 0;
+    padding: 0 0 20px;
     text-align: center;
 }
 
-.portada__media {
+.portada__grande {
     /* --- Layout --- */
-    height: 320px;
+    height: 370px;
     /* alto fijo del rectángulo del banner */
-    width: 90%;
+    width: 100%;
     /* ancho fluido: 90% del viewport */
-    max-width: 1200px;
     /* no crece más de 1200px */
     margin: 0 auto;
     /* centra el rectángulo */
@@ -39,7 +38,6 @@
     /* --- Caja --- */
     overflow: hidden;
     /* recorta la imagen si sobresale */
-    border-radius: var(--radio);
     /* esquinas redondeadas coherentes */
     box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
     /* sombra suave */
@@ -55,11 +53,11 @@
 .portada__titulo {
     /* Título con estilo de marca */
     margin: 16px 0 8px;
-    color: var(--color-marca);
-    letter-spacing: .06em;
+    color: var(--color-titulo);
+    letter-spacing: 0.4em;
     /* separa un poco las letras */
+    font-size: 2.5rem;
     text-transform: uppercase;
-    /* mayúsculas para aspecto más sólido */
 }
 
 
