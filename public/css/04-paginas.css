@@ -16,11 +16,6 @@
    - Ajustes propios de la portada (index.html)
    ========================= */
 
-/* Título de “Publicacions destacades” en Home */
-.inicio-destacados__titulo {
-    /* Color de título coherente con el diseño del sitio */
-    color: var(--color-titulo);
-}
 
 /* Contenedor de las cards en Home */
 .inicio-destacados__rejilla {
@@ -109,6 +104,79 @@
         flex-direction: column;
         align-items: stretch;
     }
+}
+
+/* =========================
+   PERFIL
+   Estilos específicos para la página de perfil
+   ========================= */
+/* Contenidor lateral: columna vertical */
+.perfil__lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    /* opcional */
+}
+
+/* El grup de dalt no necessita res especial */
+.perfil__lateral_superior {
+    display: grid;
+    /* o block; com prefereixis */
+    gap: 12px;
+}
+
+/* Aquest és el truc: baixa aquest bloc fins al fons */
+.perfil__lateral_inferior {
+    margin-top: auto;
+    /* empeny cap avall */
+    display: grid;
+    /* opcional, per tenir gap si afegeixes més coses */
+    gap: 12px;
+}
+
+/* ===== PERFIL — Banner ===== */
+.perfil__banner {
+  background: var(--color-fondo);
+  padding: 20px 0;
+}
+
+/* Centra verticalment el contingut de la rejilla del banner */
+.perfil__banner .rejilla-2-1 {
+  align-items: center;
+}
+
+/* Text d'entrada */
+.perfil__saludo h1 {
+  color: var(--color-titulo);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Avatar rodó al centre */
+.perfil__avatar {
+  justify-self: center;              /* es col·loca al centre dins la columna 2 */
+  width: 220px;
+  aspect-ratio: 1/1;              /* quadrat sempre */
+  border-radius: 50%;             /* cercle */
+  overflow: hidden;               /* retalla en cercle */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.perfil__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* retallat sense deformar */
+}
+
+/* Responsive: quan s’apila, centrem l’avatar a sota */
+@media (max-width: 900px) {
+  .perfil__avatar {
+    justify-self: center;
+    margin-top: 12px;
+  }
 }
 
 

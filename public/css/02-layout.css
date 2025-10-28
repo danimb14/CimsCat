@@ -22,18 +22,18 @@
    ====================================== */
 
 .seccion {
-    /* Separación vertical para que las secciones “respiren” */
-    padding: 24px 0;
+  /* Separación vertical para que las secciones “respiren” */
+  padding: 24px 0;
 }
 
 .seccion--suave {
-    /* Fondo suave (beige) que diferencia visualmente esta sección del resto */
-    background: var(--color-fondo);
+  /* Fondo suave (beige) que diferencia visualmente esta sección del resto */
+  background: var(--color-fondo);
 }
 
 .seccion__titulo {
-    /* Color de título coherente con el diseño del sitio */
-    color: var(--color-titulo);
+  /* Color de título coherente con el diseño del sitio */
+  color: var(--color-titulo);
 }
 
 
@@ -47,24 +47,46 @@
    ====================================== */
 
 .rejilla-1 {
-    /* Activamos Grid */
-    display: grid;
+  /* Activamos Grid */
+  display: grid;
 
-    /* Una única columna que ocupa todo el ancho disponible */
-    grid-template-columns: 1fr;
+  /* Una única columna que ocupa todo el ancho disponible */
+  grid-template-columns: 1fr;
 
-    /* Separación entre elementos de la rejilla */
-    gap: 16px;
+  /* Separación entre elementos de la rejilla */
+  gap: 16px;
+}
+
+.rejilla-2 {
+  /* Activamos Grid */
+  display: grid;
+
+  /* Dos columnas iguales de ancho */
+  grid-template-columns: 1fr 1fr;
+
+  /* Separación entre elementos de la rejilla */
+  gap: 16px;
 }
 
 .rejilla-3 {
-    display: grid;
+  display: grid;
 
-    /* Tres columnas iguales de ancho */
-    grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas iguales de ancho */
+  grid-template-columns: 1fr 1fr 1fr;
 
-    /* Separación entre columnas/filas */
-    gap: 16px;
+  /* Separación entre columnas/filas */
+  gap: 16px;
+}
+
+.rejilla-2-1 {
+  /* Activamos Grid */
+  display: grid;
+
+  /* Dos columnas (la izquierda dos veces más ancha) */
+  grid-template-columns: 2fr 1fr;
+
+  /* Separación entre elementos de la rejilla */
+  gap: 16px;
 }
 
 
@@ -79,10 +101,19 @@
    ====================================== */
 
 @media (max-width: 900px) {
-    .rejilla-3 {
-        /* De 3 columnas → 1 columna */
-        grid-template-columns: 1fr;
-    }
+  .rejilla-3 {
+    /* De 3 columnas → 1 columna */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive: apilar en pantalles estretes */
+@media (max-width: 900px) {
+
+  .rejilla-2,
+  .rejilla-2-1 {
+    grid-template-columns: 1fr;
+  }
 }
 
 
